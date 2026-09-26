@@ -9,7 +9,6 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/pardnchiu/skill-extract-offical-guide/releases"><img src="https://img.shields.io/github/v/tag/pardnchiu/skill-extract-offical-guide?include_prereleases&style=for-the-badge" alt="Version"></a>
 <a href="LICENSE"><img src="https://img.shields.io/github/license/pardnchiu/skill-extract-offical-guide?include_prereleases&style=for-the-badge" alt="License"></a>
 </p>
 
