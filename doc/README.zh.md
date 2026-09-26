@@ -2,18 +2,18 @@
 > 此 README 由 [SKILL](https://github.com/agenvoy/skill-readme-generate) 生成，英文版請參閱 [這裡](../README.md)。<br>
 > 此 skill 的實作內容全由 agent 生成，開發者僅針對 input / output 進行調整。
 
-***
+---
 
 <p align="center">
 <strong>DISTILL VENDOR PROMPTING GUIDES INTO PER-TURN MODEL STEERS!</strong>
 </p>
 
 <p align="center">
-<a href="https://github.com/pardnchiu/extract-offical-guide/releases"><img src="https://img.shields.io/github/v/tag/pardnchiu/extract-offical-guide?include_prereleases&style=for-the-badge" alt="Version"></a>
-<a href="../LICENSE"><img src="https://img.shields.io/github/license/pardnchiu/extract-offical-guide?include_prereleases&style=for-the-badge" alt="License"></a>
+<a href="https://github.com/pardnchiu/skill-extract-offical-guide/releases"><img src="https://img.shields.io/github/v/tag/pardnchiu/skill-extract-offical-guide?include_prereleases&style=for-the-badge" alt="Version"></a>
+<a href="../LICENSE"><img src="https://img.shields.io/github/license/pardnchiu/skill-extract-offical-guide?include_prereleases&style=for-the-badge" alt="License"></a>
 </p>
 
-***
+---
 
 > Claude Code skill，具備官方指引留底、跨廠商統一萃取規範與分層逐輪注入
 
@@ -25,7 +25,7 @@
 
 ## 功能特點
 
-> `git clone https://github.com/pardnchiu/extract-offical-guide ~/.claude/skills/extract-offical-guide` · [完整文件](./doc.zh.md)
+> `git clone https://github.com/pardnchiu/skill-extract-offical-guide ~/.claude/skills/skill-extract-offical-guide` · [完整文件](./doc.zh.md)
 
 - **官方原文留底** — 直接抓 Anthropic、OpenAI、Google 的 markdown 全文並標記取得日期與來源，抓不到就回報失敗，絕不以記憶內容補位。
 - **跨廠商統一萃取規範** — 所有廠商、所有型號共用同一份「一律不收」清單、刪除理由表與行數／區塊上限，不因廠商不同而放寬。
