@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- Claude Code (loads skills from `~/.claude/skills/`)
+- An agent runtime that loads skills (this guide installs to `~/.claude/skills/`)
 - Network access to `platform.claude.com`, `developers.openai.com`, `ai.google.dev`, and `web.archive.org`
 - A target repo containing `configs/prompts/system_prompt/official_guides/` (Agenvoy by default; pass `--to` for any other repo)
 - Go toolchain (the Verify phase runs `go build -tags fts5 ./...`)
@@ -24,7 +24,7 @@ git clone https://github.com/agenvoy/skill-extract-official-guide.git ~/.claude/
 ls ~/.claude/skills/extract-official-guide/SKILL.md
 ```
 
-Restart Claude Code and `extract-official-guide` appears in the skill list.
+Reload skills and `extract-official-guide` appears in the skill list.
 
 ## Configuration
 

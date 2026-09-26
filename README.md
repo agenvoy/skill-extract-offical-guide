@@ -14,7 +14,7 @@
 
 ---
 
-> A Claude Code skill with official guide archiving, unified cross-vendor extraction rules, and layered per-turn injection
+> A skill with official guide archiving, unified cross-vendor extraction rules, and layered per-turn injection
 
 ## Table of Contents
 

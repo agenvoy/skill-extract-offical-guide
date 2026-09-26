@@ -4,7 +4,7 @@
 
 ## 前置需求
 
-- Claude Code（以 `~/.claude/skills/` 載入 skill）
+- 可載入 skill 的 agent 執行環境（本文以 `~/.claude/skills/` 為安裝位置）
 - 可連線至 `platform.claude.com`、`developers.openai.com`、`ai.google.dev` 與 `web.archive.org`
 - 產出目標 repo 內存在 `configs/prompts/system_prompt/official_guides/`（預設為 Agenvoy；其他 repo 須以 `--to` 指定）
 - Go 工具鏈（Verify 階段執行 `go build -tags fts5 ./...`）
@@ -24,7 +24,7 @@ git clone https://github.com/agenvoy/skill-extract-official-guide.git ~/.claude/
 ls ~/.claude/skills/extract-official-guide/SKILL.md
 ```
 
-重啟 Claude Code 後，skill 清單會出現 `extract-official-guide`。
+重新載入 skill 後，清單會出現 `extract-official-guide`。
 
 ## 設定
 
