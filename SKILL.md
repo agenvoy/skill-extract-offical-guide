@@ -1,15 +1,15 @@
 ---
-name: extract-offical-guide
-description: 從 claude / openai / gemini 官網下載 prompting guide 到 skill 本地，再按統一規範萃取成每輪注入的模型指引檔。當使用者要求「更新 official guide」「抓官方 prompting guide」「萃取模型指引」「重寫 official_guides/<model>.md」或說「/extract-offical-guide」時使用。
+name: extract-official-guide
+description: 從 claude / openai / gemini 官網下載 prompting guide 到 skill 本地，再按統一規範萃取成每輪注入的模型指引檔。當使用者要求「更新 official guide」「抓官方 prompting guide」「萃取模型指引」「重寫 official_guides/<model>.md」或說「/extract-official-guide」時使用。
 ---
 
-# Extract Offical Guide
+# Extract Official Guide
 
 兩件事，順序固定：**下載**廠商公開的 prompting guide 到本地留底，再**萃取**成每輪注入模型 context 的反預設修正檔。
 
 | | 路徑 |
 |---|---|
-| 來源留底 | `~/.claude/skills/extract-offical-guide/offical_guide/<key>.md`（原始全文，16–98 KB） |
+| 來源留底 | `~/.claude/skills/extract-official-guide/offical_guide/<key>.md`（原始全文，16–98 KB） |
 | 產出（模型檔） | `<DEST>/<key>.md`（55 行、6 區塊上限） |
 | 產出（vendor） | `<DEST>/_vendor_<vendor>.md`（35 行、5 區塊上限） |
 | 產出（base） | `<DEST>/_base.md`、`<DEST>/_base_unlisted.md`（各 20 行、4 區塊上下） |
@@ -20,7 +20,7 @@ description: 從 claude / openai / gemini 官網下載 prompting guide 到 skill
 ## Command Syntax
 
 ```
-/extract-offical-guide [<key>...] [--to <DEST>] [--download-only] [--extract-only]
+/extract-official-guide [<key>...] [--to <DEST>] [--download-only] [--extract-only]
 ```
 
 | 參數 | 行為 |
@@ -104,7 +104,7 @@ description: 從 claude / openai / gemini 官網下載 prompting guide 到 skill
 `offical_guide/<key>.md` 已存在時：
 
 ```bash
-SKILL_DIR=~/.claude/skills/extract-offical-guide
+SKILL_DIR=~/.claude/skills/extract-official-guide
 diff -u "$SKILL_DIR/offical_guide/<key>.md" /tmp/fetched-<key>.md
 ```
 

@@ -1,4 +1,4 @@
-# extract-offical-guide - Architecture
+# extract-official-guide - Architecture
 
 > Back to [README](../README.md)
 
@@ -129,7 +129,7 @@ sequenceDiagram
     participant W as Vendor site
     participant A as offical_guide/
     participant D as DEST
-    U->>S: /extract-offical-guide [key...]
+    U->>S: /extract-official-guide [key...]
     S->>W: Fetch full .md
     W-->>S: markdown
     S->>A: diff existing archive

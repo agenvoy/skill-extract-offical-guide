@@ -1,4 +1,4 @@
-# extract-offical-guide - 架構
+# extract-official-guide - 架構
 
 > 返回 [README](./README.zh.md)
 
@@ -129,7 +129,7 @@ sequenceDiagram
     participant W as 廠商官網
     participant A as offical_guide/
     participant D as DEST
-    U->>S: /extract-offical-guide [key...]
+    U->>S: /extract-official-guide [key...]
     S->>W: 抓取 .md 全文
     W-->>S: markdown
     S->>A: diff 既有留底

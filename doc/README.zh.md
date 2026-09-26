@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<a href="../LICENSE"><img src="https://img.shields.io/github/license/pardnchiu/skill-extract-offical-guide?include_prereleases&style=for-the-badge" alt="License"></a>
+<a href="../LICENSE"><img src="https://img.shields.io/github/license/agenvoy/skill-extract-official-guide?include_prereleases&style=for-the-badge" alt="License"></a>
 </p>
 
 ---
@@ -24,7 +24,7 @@
 
 ## 功能特點
 
-> `git clone https://github.com/pardnchiu/skill-extract-offical-guide ~/.claude/skills/skill-extract-offical-guide` · [完整文件](./doc.zh.md)
+> `git clone https://github.com/agenvoy/skill-extract-official-guide ~/.claude/skills/extract-official-guide` · [完整文件](./doc.zh.md)
 
 - **官方原文留底** — 直接抓 Anthropic、OpenAI、Google 的 markdown 全文並標記取得日期與來源，抓不到就回報失敗，絕不以記憶內容補位。
 - **跨廠商統一萃取規範** — 所有廠商、所有型號共用同一份「一律不收」清單、刪除理由表與行數／區塊上限，不因廠商不同而放寬。

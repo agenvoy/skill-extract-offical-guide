@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<a href="LICENSE"><img src="https://img.shields.io/github/license/pardnchiu/skill-extract-offical-guide?include_prereleases&style=for-the-badge" alt="License"></a>
+<a href="LICENSE"><img src="https://img.shields.io/github/license/agenvoy/skill-extract-official-guide?include_prereleases&style=for-the-badge" alt="License"></a>
 </p>
 
 ---
@@ -24,7 +24,7 @@
 
 ## Features
 
-> `git clone https://github.com/pardnchiu/skill-extract-offical-guide ~/.claude/skills/skill-extract-offical-guide` · [Documentation](./doc/doc.md)
+> `git clone https://github.com/agenvoy/skill-extract-official-guide ~/.claude/skills/extract-official-guide` · [Documentation](./doc/doc.md)
 
 - **Verbatim Source Archive** — Fetches the full markdown guides from Anthropic, OpenAI, and Google with a retrieval date and source URL, and reports failures instead of filling gaps from memory.
 - **Unified Cross-Vendor Rules** — Every vendor and model shares one exclusion list, one deletion-reason table, and one line/section budget with no per-vendor exceptions.

@@ -1,4 +1,4 @@
-# extract-offical-guide - 技術文件
+# extract-official-guide - 技術文件
 
 > 返回 [README](./README.zh.md)
 
@@ -15,16 +15,16 @@
 ### 從原始碼安裝
 
 ```bash
-git clone https://github.com/pardnchiu/extract-offical-guide.git ~/.claude/skills/extract-offical-guide
+git clone https://github.com/agenvoy/skill-extract-official-guide.git ~/.claude/skills/extract-official-guide
 ```
 
 ### 確認載入
 
 ```bash
-ls ~/.claude/skills/extract-offical-guide/SKILL.md
+ls ~/.claude/skills/extract-official-guide/SKILL.md
 ```
 
-重啟 Claude Code 後，skill 清單會出現 `extract-offical-guide`。
+重啟 Claude Code 後，skill 清單會出現 `extract-official-guide`。
 
 ## 設定
 
@@ -32,7 +32,7 @@ ls ~/.claude/skills/extract-offical-guide/SKILL.md
 
 | 項目 | 路徑 | 說明 |
 |------|------|------|
-| 來源留底 | `~/.claude/skills/extract-offical-guide/offical_guide/<key>.md` | 廠商原始全文，首行為 `Retrieved <YYYY-MM-DD> from <url>` |
+| 來源留底 | `~/.claude/skills/extract-official-guide/offical_guide/<key>.md` | 廠商原始全文，首行為 `Retrieved <YYYY-MM-DD> from <url>` |
 | 預設產出目錄 | `<repo>/configs/prompts/system_prompt/official_guides/` | 目錄不存在時會反問，不自動建立 |
 
 ## 使用方式
@@ -42,7 +42,7 @@ ls ~/.claude/skills/extract-offical-guide/SKILL.md
 對來源登錄表中的全部 key 依序執行下載、萃 base、萃模型檔：
 
 ```text
-/extract-offical-guide
+/extract-official-guide
 ```
 
 ### 指定型號
@@ -50,27 +50,27 @@ ls ~/.claude/skills/extract-offical-guide/SKILL.md
 只處理指定的 key；給了 key 時預設跳過階段 B，不動一律注入的 base 檔：
 
 ```text
-/extract-offical-guide claude-opus-5-5 gpt-5.6
+/extract-official-guide claude-opus-5-5 gpt-5.6
 ```
 
 ### 只下載或只萃取
 
 ```text
 # 只更新留底，不萃取
-/extract-offical-guide gemini --download-only
+/extract-official-guide gemini --download-only
 
 # 跳過下載，直接以本地留底萃取
-/extract-offical-guide gpt-5.4 --extract-only
+/extract-official-guide gpt-5.4 --extract-only
 ```
 
 ### 進階用法
 
 ```text
 # 指定其他 repo 的產出目錄
-/extract-offical-guide claude-sonnet-5 --to ~/Desktop/git/other-repo/prompts/official_guides
+/extract-official-guide claude-sonnet-5 --to ~/Desktop/git/other-repo/prompts/official_guides
 
 # 只重萃 _base.md 與 _base_unlisted.md
-/extract-offical-guide --base-only
+/extract-official-guide --base-only
 ```
 
 留底或產出檔已存在時，skill 會先輸出差異摘要並詢問是否覆寫；未取得同意不會寫入。
@@ -81,7 +81,7 @@ ls ~/.claude/skills/extract-offical-guide/SKILL.md
 
 | 指令 | 語法 | 說明 |
 |------|------|------|
-| `/extract-offical-guide` | `/extract-offical-guide [<key>...] [--to <DEST>] [--download-only] [--extract-only] [--base-only] [--skip-base]` | 下載官方 prompting guide 並萃取為模型指引檔 |
+| `/extract-official-guide` | `/extract-official-guide [<key>...] [--to <DEST>] [--download-only] [--extract-only] [--base-only] [--skip-base]` | 下載官方 prompting guide 並萃取為模型指引檔 |
 
 ### 旗標
 

@@ -1,4 +1,4 @@
-# extract-offical-guide - Documentation
+# extract-official-guide - Documentation
 
 > Back to [README](../README.md)
 
@@ -15,16 +15,16 @@
 ### From Source
 
 ```bash
-git clone https://github.com/pardnchiu/extract-offical-guide.git ~/.claude/skills/extract-offical-guide
+git clone https://github.com/agenvoy/skill-extract-official-guide.git ~/.claude/skills/extract-official-guide
 ```
 
 ### Verify Loading
 
 ```bash
-ls ~/.claude/skills/extract-offical-guide/SKILL.md
+ls ~/.claude/skills/extract-official-guide/SKILL.md
 ```
 
-Restart Claude Code and `extract-offical-guide` appears in the skill list.
+Restart Claude Code and `extract-official-guide` appears in the skill list.
 
 ## Configuration
 
@@ -32,7 +32,7 @@ The skill reads no environment variables; command arguments and the paths below 
 
 | Item | Path | Description |
 |------|------|-------------|
-| Source archive | `~/.claude/skills/extract-offical-guide/offical_guide/<key>.md` | Full vendor text; first line is `Retrieved <YYYY-MM-DD> from <url>` |
+| Source archive | `~/.claude/skills/extract-official-guide/offical_guide/<key>.md` | Full vendor text; first line is `Retrieved <YYYY-MM-DD> from <url>` |
 | Default output | `<repo>/configs/prompts/system_prompt/official_guides/` | The skill asks instead of creating it when missing |
 
 ## Usage
@@ -42,7 +42,7 @@ The skill reads no environment variables; command arguments and the paths below 
 Run download, base extraction, and model extraction for every key in the source registry:
 
 ```text
-/extract-offical-guide
+/extract-official-guide
 ```
 
 ### Specific Models
@@ -50,27 +50,27 @@ Run download, base extraction, and model extraction for every key in the source 
 Process only the given keys; passing keys skips Phase B by default so the always-injected base files stay untouched:
 
 ```text
-/extract-offical-guide claude-opus-5-5 gpt-5.6
+/extract-official-guide claude-opus-5-5 gpt-5.6
 ```
 
 ### Download or Extract Only
 
 ```text
 # Refresh the archive without extracting
-/extract-offical-guide gemini --download-only
+/extract-official-guide gemini --download-only
 
 # Skip download and extract from the local archive
-/extract-offical-guide gpt-5.4 --extract-only
+/extract-official-guide gpt-5.4 --extract-only
 ```
 
 ### Advanced
 
 ```text
 # Write to another repo's output directory
-/extract-offical-guide claude-sonnet-5 --to ~/Desktop/git/other-repo/prompts/official_guides
+/extract-official-guide claude-sonnet-5 --to ~/Desktop/git/other-repo/prompts/official_guides
 
 # Re-extract only _base.md and _base_unlisted.md
-/extract-offical-guide --base-only
+/extract-official-guide --base-only
 ```
 
 When an archive or output file already exists, the skill prints a diff summary and asks before overwriting; nothing is written without approval.
@@ -81,7 +81,7 @@ When an archive or output file already exists, the skill prints a diff summary a
 
 | Command | Syntax | Description |
 |---------|--------|-------------|
-| `/extract-offical-guide` | `/extract-offical-guide [<key>...] [--to <DEST>] [--download-only] [--extract-only] [--base-only] [--skip-base]` | Download official prompting guides and extract them into model guide files |
+| `/extract-official-guide` | `/extract-official-guide [<key>...] [--to <DEST>] [--download-only] [--extract-only] [--base-only] [--skip-base]` | Download official prompting guides and extract them into model guide files |
 
 ### Flags
 
